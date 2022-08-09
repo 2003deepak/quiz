@@ -14,3 +14,9 @@
 body{
     background-image: url("/light1.jpg");
 }
+input[type="text"]{
+
+    width: 80%;
+    height: 200px;
+    margin-top: 350px;
+}

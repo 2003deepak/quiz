@@ -14,7 +14,7 @@
         <a href="login.php"  target="_blank" class="Navigation"><b> Login </b></a>
         <a href="contact.php"  target="_blank" class="Navigation"><b> Contact </b></a>
     </nav>
-    <p>Hello everyone , this website is created by Deepak , Rahul </p>
+    <input type="text" placeholder = "Your Feedback is valuable for us ">
     <p>Contact us  </p>
     <a href="https://www.instagram.com/deepak_yadav.7449/">Instagram</a>
     <a href="https://www.linkedin.com/in/deepak7449/">linkedin</a>
