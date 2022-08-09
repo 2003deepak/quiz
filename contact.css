@@ -1,0 +1,16 @@
+.Navigation{
+    color:rgb(238, 10, 97);
+    padding: 20px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0px;
+    transition: 0.4s ease-in-out;
+}
+
+.Navigation:hover{
+    color: white;
+}
+
+body{
+    background-image: url("/light1.jpg");
+}
