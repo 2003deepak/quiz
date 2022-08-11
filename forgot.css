@@ -1,0 +1,59 @@
+.Navigation{
+    color:black;
+    padding: 20px;
+    font-size: larger;
+    
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 0px;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.Navigation:hover{
+    color: white;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url("images/2222.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.forgot{
+
+    position: absolute;
+    transform:translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+    
+    width: 400px;
+    height: 300px;
+}
+p{
+
+}
+    
+h1{
+    
+}
+input[type="email"]{
+    
+    width: 100%;
+}
+input[type="text"]{
+   
+    width: 100%;
+
+}
+input[type="submit"]{
+
+    margin-top: 20px;
+    margin-left: 110px;
+    width: 50%;
+    height: 40px;
+    background-color:#2691d9 ;
+    color: white;
+    font-size: 15px;
+}
+
