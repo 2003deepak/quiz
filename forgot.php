@@ -18,12 +18,13 @@
 
     <div class = "forgot">
 
-        <form action="reset.php">
+        <form action="reset.php" method="post">
 
         <h1>Forgot your password ?</h1>
 
         <p>Username</p>
-        <input type="text" name="username" placeholder="Enter Your Username">
+        <input type="text" name="username" placeholder="Enter Your Registered Username">
+        <br>
 
         <p>Email Id</p>
         <input type="email" name="email" placeholder="Enter Your Registered Email ID">

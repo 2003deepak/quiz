@@ -22,8 +22,12 @@
 
         <h1>Reset Your Password </h1>
 
+
+        <p>Username</p>
+        <input type="text" name="username" placeholder="Enter Your Username">
+
         <p>Password</p>
-        <input type="text" name="firstpass" placeholder="Enter Your Password">
+        <input type="password" name="firstpass" placeholder="Enter Your Password">
 
         <p>Confirm Password</p>
         <input type="text" name="confirmpass" placeholder="Enter Your Confirm Password ">
