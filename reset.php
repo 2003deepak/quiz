@@ -16,12 +16,10 @@ if(isset($_POST['submit'])){
 
        
         $subject = "Password Reset Link ";
-        $body = "Hi $username , click here to reset your password 
-        http://localhost/onlinequiz/passwordreset2.php" ;
+        $body = "Hi $username , click here to reset your password  http://localhost/onlinequiz/passwordreset2.php" ;
 
-        send_password_res
-        $sender_email = "From: yadavsuraj7449@gmail.com";
-        if(mail($email, $subject , $body ,$sender_email)){
+        $sendemail = "From: yadavsuraj7449@gmail.com";
+        if(mail($email, $subject , $body ,$sendemail)){
             
             echo " <script>alert('Verification Link has been sent ')</script> " ;
         }else{

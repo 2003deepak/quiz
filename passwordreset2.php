@@ -18,7 +18,7 @@
 
     <div class = "forgot">
 
-        <form action="reset2.php">
+        <form action="reset2.php" method = "post">
 
         <h1>Reset Your Password </h1>
 

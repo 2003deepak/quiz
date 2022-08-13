@@ -7,25 +7,31 @@ if(isset($_POST['submit'])){
     $firstpass = $_POST['firstpass'];
     $confirmpass = $_POST['confirmpass'];
     $username= $_POST['username'];
-    $sql = " UPDATE register set password = '$confirmpass' where username = '$username' " ;
+    $sql = " select * from register where username = '$username'" ;
+    $query = mysqli_query($conn,$sql);
+    $row = mysqli_num_rows($query);
+    if($row){
+        if($firstpass == $confirmpass){
+           
+            $sql1 = "update register set password = '$firstpass' where username = '$username' " ;
+            $query1 = mysqli_query($conn,$sql1);
+            if($query1){
+                echo '<script>alert("Password is Updated ")</script>' ;
+            }else{
+                echo '<script>alert("OOPS something Went wrong ")</script>' ;
+            }
 
-    if($firstpass == $confirmpass){
-
-        $sql = " UPDATE register set password = '$confirmpass' where username = '$username' " ;
-        $query = mysqli_query($conn,$sql);
-        if($query==TRUE){
-            echo '<script>echo(" Password is reset successfully ")</script> ' ;
         }else{
-            echo '<script>echo(" Oops Something went wrong ")</script> ' ;
+            echo '<script>alert("Passwords are not matching")</script>' ;
         }
-        
-        
     }else{
-
-        echo '<script>echo("Both The passwords are not matching")</script> ' ;
+        echo '<script>alert("Pls enter correct credentials ")</script>' ;
     }
-}
 
 
+
+
+
+    }
 
 ?>
