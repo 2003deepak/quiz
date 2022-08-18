@@ -1,0 +1,39 @@
+body{
+   
+    background: linear-gradient(120deg,#f7d30a,#7ce237)
+}
+.full{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    border-radius: 15px;
+
+}
+li{
+    margin-left: 20px;
+}
+h2{
+   margin-left: 270px;
+    
+}
+select{
+    padding: 2px;
+}
+input[type="submit"]{
+    height: 30px;
+    margin-left: 260px;
+    border-radius: 5px;
+    background-color: #42a3e4;
+    width: 25%;
+}
+h3{
+    margin-left: 210px;
+}
+select{
+    margin-left: 270px;
+    margin-bottom: 50px;
+}
