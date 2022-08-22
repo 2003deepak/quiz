@@ -4,7 +4,7 @@ include 'config.php' ;
 if(isset($_POST['submit'])){
 
     $level = $_POST['dropdown'] ;
-    $sql = "INSERT INTO register (`level`) VALUES ('$level');
+    $sql = "INSERT INTO register (`level`) VALUES ('$level') where username = $username ;
 
     if ($conn->query($sql) === TRUE) {
         echo '<script> alert("done")</script>';
