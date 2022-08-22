@@ -9,7 +9,7 @@ body{
     left: 50%;
     background-color: white;
     width: 800px;
-    height: 400px;
+    height: 430px;
     border-radius: 15px;
 
 }
@@ -25,7 +25,7 @@ select{
 }
 input[type="submit"]{
     height: 30px;
-    margin-left: 295px;
+    margin-left: 310px;
     border-radius: 5px;
     background-color: #42a3e4;
     width: 25%;
@@ -37,4 +37,11 @@ h3{
 select{
     margin-left: 310px;
     margin-bottom: 50px;
+}
+input[type="text"]{
+   
+    margin-left: 310px;
+    
+    margin-bottom: 10px;
+    
 }

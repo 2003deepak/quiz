@@ -11,12 +11,17 @@
     <div class= "full">
         <form action="attemptexam.php" method = "post">
             <h3>Which Level Do you Want to Attempt </h3>
-            <select name="dropdown">
-                <option value="easy">Easy(1 Marks/Question)</option>
-                <option value="medium">Medium(2 Marks/Question)</option>
-                <option value="hard">Hard(5 Marks/Question)</option>
-            </select>
+
+
+            <input type="text" placeholder="Enter Your Username" name = username> Username 
             <br>
+
+
+            <select name = "questionlevel" class= "dropdown">
+                <option value = "easy">Easy(1 Marks/Question)</option>
+                <option value = "medium">Medium(2 Marks/Question)</option>
+                <option value = "hard">Hard(5 Marks/Question)</option>
+            </select>
             <h2>Rules Of The Quiz </h2>
     
             <div class="rules">

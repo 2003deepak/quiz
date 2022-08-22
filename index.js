@@ -1,25 +1,100 @@
-const quiz =[
+const quizData = [
     {
-        question : "Q1) How many wonders of world are there ? " ,
-        a : "8",
-        b : "7",
-        c : "6",
-        d : "9",
-    }
+        question: "Which language runs in a web browser?",
+        a: "Java",
+        b: "C",
+        c: "Python",
+        d: "javascript",
+        correct: "d",
+    },
     {
-        question : "Q2 ) What is the value of tan(90) ? " ,
-        a : "1",
-        b : "1/3",
-        c : "Infinity",
-        d : "0",
+        question: "What does CSS stand for?",
+        a: "Central Style Sheets",
+        b: "Cascading Style Sheets",
+        c: "Cascading Simple Sheets",
+        d: "Cars SUVs Sailboats",
+        correct: "b",
+    },
+    {
+        question: "What does HTML stand for?",
+        a: "Hypertext Markup Language",
+        b: "Hypertext Markdown Language",
+        c: "Hyperloop Machine Language",
+        d: "Helicopters Terminals Motorboats Lamborginis",
+        correct: "a",
+    },
+    {
+        question: "What year was JavaScript launched?",
+        a: "1996",
+        b: "1995",
+        c: "1994",
+        d: "none of the above",
+        correct: "b",
+    },
 
-    }
-    {
-        question : "Q3 ) What is the formula of simple interest  ? " ,
-        a : "(P*R*T)/365",
-        b : "(P*R*T*H)/100",
-        c : "(P*R*T)/100",
-        d : "(365*P*R*T)/100",
 
+];
+
+const quiz= document.getElementById('test')
+const answerEls = document.querySelectorAll('.answer')
+const questionEl = document.getElementById('question')
+const a_text = document.getElementById('1')
+const b_text = document.getElementById('2')
+const c_text = document.getElementById('3')
+const d_text = document.getElementById('4')
+const submitBtn = document.getElementById('submit')
+
+
+let currentQuiz = 0
+let score = 0
+
+loadQuiz()
+
+function loadQuiz() {
+
+    deselectAnswers()
+
+    const currentQuizData = quizData[currentQuiz]
+
+    questionEl.innerText = currentQuizData.question
+    a_text.innerText = currentQuizData.a
+    b_text.innerText = currentQuizData.b
+    c_text.innerText = currentQuizData.c
+    d_text.innerText = currentQuizData.d
+}
+
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+}
+
+function getSelected() {
+    let answer
+    answerEls.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+    return answer
+}
+
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+       if(answer === quizData[currentQuiz].correct) {
+           score++
+       }
+
+       currentQuiz++
+
+       if(currentQuiz < quizData.length) {
+           loadQuiz()
+       } else {
+           quiz.innerHTML = `
+           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+
+           <button onclick="location.reload()">Reload</button>
+           `
+       }
     }
-]
+})

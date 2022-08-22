@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online KC Quiz </title>
     <link rel="stylesheet" href="exam1.css">
+    <script src="index.js"></script>
 
 </head>
 <body>
     <div class="test">
         <h1>Online Test </h1>
-        <form action="ansewr.php" method = 'post' name = "myform">
-            <p><b>There will be a question</b> </p>
+      
+            <p id = "question"><b>There will be a question</b> </p>
 
-            <input type="button" value="Answer1" id = 1>
+            <input type="button" value="Answer1" id = "1" class="answer">
             <br>
-            <input type="button" value="Answer2">
+            <input type="button" value="Answer2" id = "2" class="answer">
             <br>
-            <input type="button" value="Answer3">
+            <input type="button" value="Answer3" id = "3" class="answer">
             <br>
-            <input type="button" value="Answer4">
+            <input type="button" value="Answer4" id="4" class="answer">
             <br>
             <br>
-            <input type="reset" value = "Back" id = "reset">
-            <input type="submit" value = "Next" id = "next">
+            <!-- <input type="reset" value = "Back" id = "reset"> -->
+            <input type="submit" value = "Next" id = "submit">
 
         </form>
     </div>
