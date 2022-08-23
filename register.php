@@ -13,6 +13,7 @@ if(isset($_POST['save'])){
   $sql = "INSERT INTO register (`username`,`password`,`email`, `stream`,`gender`) VALUES ('$username','$password' ,'$email', '$stream','$gender')";
   if ($conn->query($sql) === TRUE) {
     echo "<script> alert('You are successfully registered')</script>";
+    header('location:login.html');
   }else {
     echo "<script> alert('You are not registered pls try again with right credentials ')</script>" ;
   }

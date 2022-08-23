@@ -1,6 +1,12 @@
 body{
     padding: 0;
     margin: 0;
+    background-image: url("images/bg.webp");
+}
+h1{
+    margin-left: 740px;
+    margin-top: 150px;
+    font-size: 50px;
 }
 
 .test{
@@ -8,16 +14,21 @@ body{
     transform:translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    height: 400px;
-    width: 500px;
+    height: 430px;
+    width: 600px;
+    background-color: white;
 }
 input[type="button"]{
     padding: 10px;
-    width: 100%;
-    margin-bottom: 10px;
+    width: 80%;
+    margin-bottom: 05px;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 p{
-    text-align: center;
+    margin-left: 150px;
+    margin-top: 40px;
+    font-size: 20px;
 }
 #next{
 
@@ -37,4 +48,12 @@ p{
 }
 #reset:hover{
     background-color:rgb(228, 34, 34);
+}
+input[type="submit"]{
+    padding: 10px;
+    width: 30%;
+    margin-bottom: 05px;
+    margin-top: 20px;
+    margin-left: 205px;
+    background-color:#58b0eb;
 }
