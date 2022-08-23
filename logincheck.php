@@ -16,6 +16,7 @@ if(isset($_POST['submit'])){
     
     if($row ==1){
         echo '<script>alert("You are succesfully Logined ")</script>' ;
+        header('location:welcome.html');
   
     }else{
          echo '<script>alert("Invalid username or Password ")</script>' ;

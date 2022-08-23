@@ -13,6 +13,7 @@ if(isset($_POST['submit'])){
         $sql2 = "UPDATE register SET level = '$questionlevel' WHERE username = '$username';";
         if ($conn->query($sql2) === TRUE) {
             echo "<script> alert('Pls attempt Your Exam')</script>";
+            header('location:exam1.html');
         }else {
             echo "<script> alert('Pls try again Later')</script>" ;
       }
