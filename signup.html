@@ -26,19 +26,19 @@
 
         
 
-            <form action="register.php" method="post">
+            <form action="register.php" method="post" name = "f1">
             
                 <img src = "images/loginavatar.png" alt="Login" height="120px" id="avatar">
                 <br>
                 <h1>Sign Up Now </h1>
                 <br>
                 <p class ="textf" > <b>Username</b></p>
-                <input type="text" placeholder="Enter The Username" class="text" name="username">
+                <input type="text" placeholder="Enter The Username" class="text" name="username" id = '1'>
                 <p class="textf"> <b>Password </b></p>
-                <input type="password" placeholder="Enter Your Password" class="text" name="password">
+                <input type="password" placeholder="Enter Your Password" class="text" name="password" id = '2'>
                 <br>
                 <p class="textf"><b>Email Id </b></p>
-                <input type="email" placeholder="Enter Your Email Id" class="text" name="email">
+                <input type="email" placeholder="Enter Your Email Id" class="text" name="email" id = '3'>
                 <br>
                 <br>
                 <p class = "textf"><b>Stream</b> </p>
@@ -69,9 +69,28 @@
                 
          
         </div> 
+
+        <!-- <script>
+
+            function validate(){
+
+                var username = document.getElementById("1");
+                var password = document.getElementById("2");
+                var email = document.getElementById("3");
+
+                if(username.length<2){
+                    alert("The username is not short ")
+                    return false ;
+                }else if(username.length>20){
+
+                    alert("The username is too long ")
+                    return false ;
+                }
+            }
+        </script> -->
         
 
-        
+    
     
 </body>
 </html>
