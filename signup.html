@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signup.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+    rel="stylesheet"
+  />
     <title>Online KC Quiz </title>
 </head>
 <body>
@@ -21,6 +25,7 @@
 
 </header>
 
+
 <div class="Signup" >
         
 
@@ -33,15 +38,15 @@
                 <h1>Sign Up Now </h1>
                 <br>
 
-                <p class ="textf" > <b>Username</b></p>   
+                <!-- <p class ="textf" > <b>Username</b></p>    -->
 <!--                 <p class ="textf" > <b>Username</b></p> -->
 
-                <input type="text" placeholder="Enter The Username" class="text" name="username" id = '1'>
+                <input type="text" placeholder="Enter The Username" class="text" name="username" id = '1' autocomplete="off">
 <!--                 <p class="textf"> <b>Password </b></p> -->
-                <input type="password" placeholder="Enter Your Password" class="text" name="password" id = '2'>
+                <input type="password" placeholder="Enter Your Password" class="text" name="password" id = '2' autocomplete="off">
                 <br>
 <!--                 <p class="textf"><b>Email Id </b></p> -->
-                <input type="email" placeholder="Enter Your Email Id" class="text" name="email" id = '3'>
+                <input type="email" placeholder="Enter Your Email Id" class="text" name="email" id = '3' autocomplete="off">
                 <br>
                 <br>
 <!--                 <p class = "textf"><b>Stream</b> </p> -->
@@ -54,18 +59,26 @@
                 </select>
 
                 <br>
-                <p class="textf"><b>Gender</b></p>
+                <!-- <p class="textf"><b>Gender</b></p> -->
                 
                 <!-- This is the Button for submitting and reset  -->
-                <input type="radio" value = "Male" name="gender">Male
+                <!-- <input type="radio" value = "Male" name="gender">Male
                 <br>
                 <input type="radio" value = "Female" name="gender">Female
                 <br>
+                <br> -->
                 <br>
+                <br>
+
+                <input type="radio" value = "Male" name="gender" class="radio"><b>Male</b>
+                <input type="radio" value = "Female" name="gender" class="radio"><b>Female</b>
+               <br>
+        
+        
 
                
                 <input type= "submit" value = "Sign Up " name = "save" class="signupbtn"></button>
-                <p id = "learn"><b>Do You Have an Account ? </b><a href="login.php">Login</a></p>
+                <p id = "learn"><b>Do You Have an Account ? </b><a href="login.php"><b>Login</a></b></p>
 
                 
             </form>
