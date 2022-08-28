@@ -16,7 +16,8 @@ if(isset($_POST['submit'])){
             $sql1 = "update register set password = '$firstpass' where username = '$username' " ;
             $query1 = mysqli_query($conn,$sql1);
             if($query1){
-                echo '<script>alert("Password is Updated ")</script>' ;
+                echo '<script>alert("Password is Updated , Pls Login Now")</script>' ;
+                echo "<script> location.replace('login.html')</script> ";
             }else{
                 echo '<script>alert("OOPS something Went wrong ")</script>' ;
             }
