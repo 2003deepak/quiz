@@ -1,4 +1,4 @@
-body{
+/* body{
     background-image: url("images/final.jfif");
     background-size: cover;
 }
@@ -78,4 +78,80 @@ input[type="radio"]{
 #learn{
 
     font-size: 20px;
+}
+ */
+
+
+
+body{
+    background-image: url("images/final.jfif");
+    background-size: cover;
+}
+.Navigation{
+    color:black;
+    padding: 20px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0px;
+    transition: 0.4s ease-in-out;
+}
+.Navigation:hover{
+    color: white;
+}
+
+.Signup{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    margin-top: 40px;
+    background-color: white;
+    height: 440px;
+    width: 400px;
+    text-align: center;
+    
+
+}
+#avatar{
+
+    margin-left: 850px;
+    margin-top: 150px;
+}
+.signupbtn{
+
+    width: 70%;
+    margin-left: 40px;
+    cursor: pointer;
+    height: 40px;
+    font-size: 25px;
+    background-color: #00ff00;
+    color: #FEDB39;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.textf{
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    color:#FEDB39;
+}
+.text{
+  
+    margin: 10px;
+    width: 70%;
+    font-size: 20px;
+   
+}
+.dropdown{
+
+    margin-left:-5px;
+    width: 70%;
+    font-size: 20px;
+}
+input[type="radio"]{
+
+    margin-left: -210px;
+    margin-top: 10px;
+    /* padding: 50px; */
+
 }
