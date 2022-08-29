@@ -41,7 +41,7 @@ body{
     height: 40px;
     margin-top: 20px;
     border: none;
-    background-color: #3c7bda;
+    background-color: #2691d9;
     cursor: pointer;
     color: white;
     font-size: 18px;
@@ -61,12 +61,12 @@ body{
    
 }
 .dropdown{
-    width: 73.5%;
+    width: 78%;
     padding: 10px;
     border: none;
     border: 2px solid gray;
     border-radius: 6px;
-    margin-left: -1rem;
+    margin-left: 0.01rem;
     outline: none;
     font-size: 1rem;
 
