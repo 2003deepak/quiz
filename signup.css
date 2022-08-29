@@ -3,7 +3,8 @@ body{
     /* background-image: url("images/final.jfif"); */
     background: linear-gradient(120deg, #2980b9, #8e44ad);
     background-size: cover;
-    font-family: "Roboto", sans-serif;
+    /* font-family: 'DynaPuff', cursive; */
+    /* font-family: "Roboto", sans-serif; */
 }
 .Navigation{
     color:black;
@@ -20,7 +21,7 @@ body{
 .Signup{
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 75%;
+    top: 65%;
     left: 50%;
     text-align: center;
     background-color: white;
@@ -30,10 +31,10 @@ body{
     
 
 }
-#avatar{
+/* #avatar{
 
     margin-top: -0.51rem;
-}
+} */
 
 .signupbtn{
     width: 80%;
