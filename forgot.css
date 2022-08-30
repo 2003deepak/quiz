@@ -37,12 +37,11 @@ h1{
 }
 p{
     margin-left: 40px;
-    font-size: 20px;
+    font-size: 1rem;
 }
 input[type="email"]{
     
-    /* width: 80%;
-    margin-left: 30px; */
+    
     width: 75%;
     padding: 10px;
     margin-bottom: 17px;
@@ -71,29 +70,21 @@ input[type="text"]{
 }
 input[type="submit"]{
 
-    margin-top: 10px;
-    margin-left: 40px;
-
-    width: 77%;
-    height: 40px;
-    background-color:#2691d9;
-    border-radius: 25px;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-
-    /* margin-top: 20px;
-    margin-left: 30px;
     width: 80%;
     height: 40px;
-    background-color:#2691d9 ;
+    margin-top: -1rem;
+    border: none;
+    background-color: #2691d9;
+    cursor: pointer;
     color: white;
-    font-size: 15px; */
-    /* border-radius: 15px; */
+    font-size: 18px;
+    margin-left: 2.2rem;
+    
 }
 #backtosignin{
   
-   
-   margin-left: 190px;
+
+   margin-left: 11rem;
+   font-size: 1.3rem;
 
 }
