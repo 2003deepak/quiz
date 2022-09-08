@@ -13,6 +13,7 @@ body{
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-image: url("/images/bg.webp");
 }
 .quiz-container{
   background-color: #fff;
@@ -52,10 +53,11 @@ button{
   font-family: inherit;
   padding: 1.3rem;
 }
-button:hover{
+/* button:hover{
   background-color: #04adc4;
-}
-button:focus{
+} */
+button:hover{
   outline: none;
-  background-color: #44b927;
+  background-color: #0f70df;
 }
+
