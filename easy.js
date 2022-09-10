@@ -258,9 +258,22 @@ submitBtn.addEventListener('click', () => {
            loadQuiz()
        } else {
            let percentage = (score/50 )*100 ;
-           quiz.innerHTML = `
-           <h2>You have scored ${score} out of 50 marks </h2>
-           <h2> You have secured ${percentage} %  in the exam </h2> `
+
+           if(percentage>=80){
+            quiz.innerHTML = `
+              <h2>You have scored ${score} out of 50 marks </h2>
+              <h2> You have secured ${percentage} %  in the exam 
+              You have passed the Exam </h2> `
+           }else{
+            quiz.innerHTML = `
+            <h2>You have scored ${score} out of 50 marks </h2>
+            <h2> You have secured ${percentage} %  in the exam 
+            You have failed the Exam </h2> `
+           }
+
+           
        }
+
+    
     }
 })

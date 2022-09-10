@@ -160,7 +160,7 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "21) Telescope revolving the erath is ?",
+        question: "21) Telescope revolving the Earth is ?",
         a: "Hubble Telescope",
         b: "James Webb Telescope",
         c: "INSAT",
@@ -256,10 +256,22 @@ submitBtn.addEventListener('click', () => {
        if(currentQuiz < quizData.length) {
            loadQuiz()
        } else {
-           let percentage = (score/50 )*100 ;
-           quiz.innerHTML = `
-           <h2>You have scored ${score} out of 50 marks </h2>
-           <h2> You have secured ${percentage} %  in the exam </h2> `
+           let percentage = (score/50)*100 ;
+
+           if(percentage>75){
+            quiz.innerHTML = `
+              <h2>You have scored ${score} out of 50 marks </h2>
+              <h2> You have secured ${percentage} %  in the exam 
+              You have passed the Exam </h2> `
+           }else{
+            quiz.innerHTML = `
+            <h2>You have scored ${score} out of 50 marks </h2>
+            <h2> You have secured ${percentage} %  in the exam 
+            You have failed the Exam </h2> `
+           }
+        //    quiz.innerHTML = `
+        //    <h2>You have scored ${score} out of 50 marks </h2>
+        //    <h2> You have secured ${percentage} %  in the exam </h2> `
        }
     }
 })
