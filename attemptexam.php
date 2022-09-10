@@ -5,7 +5,7 @@ include 'config.php' ;
 if(isset($_POST['submit'])){
 
     $questionlevel = $_POST['questionlevel'];
-    $username = $_POST['username'] ;
+    $username = $_SESSION['username'] ;
     // $_SESSION['username'] = $username ;
     $sql1 = " select * from register where username = '$username'" ;
     $query = mysqli_query($conn,$sql1);
