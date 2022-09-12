@@ -9,47 +9,63 @@ body{
     left: 50%;
     background-color: white;
     width: 800px;
-    height: 430px;
+    height: 480px;
     border-radius: 15px;
 
 }
 li{
     margin-left: 40px;
+    font-size: 1.2rem;
 }
-h2{
-   margin-left: 310px;
-    
-}
-select{
-    padding: 2px;
-}
+
+.dropdown{
+    width: 33.3%;
+    padding: 5px;
+    border: none;
+    margin-left: 16.95rem;
+    border: 2px solid gray;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+} 
 input[type="submit"]{
-    height: 30px;
-    margin-left: 310px;
-    border-radius: 5px;
-    background-color: #42a3e4;
-    width: 25%;
-    font-weight: 600;
-}
-h3{
-    margin-left: 250px;
-}
-select{
-    margin-left: 310px;
-    margin-bottom: 50px;
+
+    width: 50%;
+    height: 40px;
+    /* margin-top: 0px; */
+    border: none;
+    margin-left: 13rem;
+    background-color: #2691d9;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
 }
 input[type="text"]{
    
-    margin-left: 310px;
-    
-    margin-bottom: 10px;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 17px;
+    margin-left: 17rem;
+    font-size: 14px;
+    border: none;
+    border: 2px solid gray;
+    border-radius: 6px;
+    outline: none;
     
 }
-a{
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 1270px;
-    background-color: white;
-    width: 100px;
-    height: 100px;
+
+h2{
+    text-align: center;
+    color: #27097a;
+    padding: 5px;
+}
+
+#logout{
+    margin-left: 78rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #e21313;
+   
+    /* background-color: white; */
+
 }
