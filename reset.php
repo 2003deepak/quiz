@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
 
        
         $subject = "Password Reset Link ";
-        $body = "Hi $username , click here to reset your password  http://localhost/deepakquiz/passwordreset2.html" ;
+        $body = "Hi $username , click here to reset your password  http://localhost/deepak/passwordreset2.html" ;
 
         $sendemail = "From: yadavsuraj7449@gmail.com";
         if(mail($email, $subject , $body ,$sendemail)){
