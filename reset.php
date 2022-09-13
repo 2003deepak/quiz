@@ -29,6 +29,7 @@ if(isset($_POST['submit'])){
         }
     }else{
         echo ' <script>alert("Pls enter correct credentials ")</script> ' ;
+        echo "<script> location.replace('forgot.html')</script> ";
     }
 
     // echo "alert('Clicked')";

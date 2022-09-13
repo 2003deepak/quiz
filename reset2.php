@@ -20,13 +20,16 @@ if(isset($_POST['submit'])){
                 echo "<script> location.replace('login.html')</script> ";
             }else{
                 echo '<script>alert("OOPS something Went wrong ")</script>' ;
+                echo "<script> location.replace('forgot.html')</script> ";
             }
 
         }else{
             echo '<script>alert("Passwords are not matching")</script>' ;
+            echo "<script> location.replace('forgot.html')</script> ";
         }
     }else{
         echo '<script>alert("Pls enter correct credentials ")</script>' ;
+        echo "<script> location.replace('forgot.html')</script> ";
     }
 
 
