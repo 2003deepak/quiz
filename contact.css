@@ -10,7 +10,64 @@
 .Navigation:hover{
     color: white;
 }
+form{
+    margin-top: 2rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+   
+}
+#name{
+    width: 50rem;
+    padding: 10px;
+    margin-bottom: 17px;
+    font-size: 17px;
+    border: none;
+    border: 2px solid gray;
+    border-radius: 6px;
+    outline: none;
+    margin-left: 35px;
+}
+#feedback{
+    width: 50rem;
+    height: 10rem;
+    padding: 10px;
+    margin-bottom: 17px;
+    font-size: 17px;
+    border: none;
+    border: 2px solid gray;
+    border-radius: 6px;
+    outline: none;
+    margin-left: 35px;
+
+}
 
 body{
-    background-image: url("/light1.jpg");
+    background-image: url("images/final.jfif");
+    background-size: cover;
+}
+
+input[type="submit"]{
+    width: 30%;
+    height: 40px;
+    margin-top: 1.5rem;
+    border: none;
+    background-color: #2691d9;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    margin-left: 20rem;
+}
+h1{
+    margin-left: 20rem;
+    padding: 2rem;
+    color: rgb(236, 15, 107);
+}
+
+.contact2{
+    font-size: 1.5rem;
+    margin-left: 14rem;
+    font-weight: 400;
 }
