@@ -40,7 +40,7 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "6) when did india won its first world cup?",
+        question: "6) When did india won its first world cup?",
         a: "1985",
         b: "1983",
         c: "2011",

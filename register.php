@@ -22,6 +22,7 @@ if(isset($_POST['save'])){
     // header('location:login.html');
   }else {
     echo "<script> alert('You are not registered pls try again with right credentials ')</script>" ;
+    echo "<script> location.replace('signup.html')</script> ";
   }
 }
 

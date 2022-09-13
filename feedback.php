@@ -13,12 +13,14 @@ if(isset($_POST['save'])){
   if ($conn->query($sql) === TRUE) {
 
     echo "<script> alert('You are successfully given feedback ')</script> " ;
+    echo "<script> location.replace('contact.html')</script> ";
     // echo "done" ;
    
  
     // header('location:login.html');
   }else {
     echo "<script> alert('Something went wrong ')</script>" ;
+    echo "<script> location.replace('contact.html')</script> ";
   }
 }
 
