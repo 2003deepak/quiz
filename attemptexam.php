@@ -1,21 +1,21 @@
 <?php
 
 include 'config.php' ;
+session_start() ;
 
 if(isset($_POST['submit'])){
 
     $questionlevel = $_POST['questionlevel'];
-    $username = $_POST['username'] ;
-    // $_SESSION['username'] = $username ;
+    $username = $_SESSION['username'] ;
+   
     $sql1 = " select * from register where username = '$username'" ;
-    // echo "hello " .$_SESSION['username'];
     $query = mysqli_query($conn,$sql1);
 
     $row = mysqli_num_rows($query);
 
     if($row){
 
-        $sql2 = "UPDATE register SET level = '$questionlevel' WHERE username = '$username';";
+        $sql2 = "UPDATE register SET level = '$questionlevel' WHERE username = '$username' ";
         if ($conn->query($sql2) === TRUE) {
             echo "<script> alert('Pls attempt Your Exam')</script>";
             if($questionlevel == "easy"){

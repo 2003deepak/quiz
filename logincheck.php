@@ -1,8 +1,7 @@
 <?php 
 
-session_start() ;
-
 include 'config.php' ;
+session_start();
 
 if(isset($_POST['submit'])){
 
@@ -16,6 +15,7 @@ if(isset($_POST['submit'])){
     
     if($row ==1){
         echo '<script>alert("You are succesfully Logined ")</script>' ;
+        $_SESSION['username'] = $username ;
         echo "<script> location.replace('welcome.html')</script> ";
   
     }else{
